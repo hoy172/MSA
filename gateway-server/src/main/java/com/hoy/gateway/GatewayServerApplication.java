@@ -11,7 +11,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableDiscoveryClient
 @EnableOAuth2Sso
 @SpringBootApplication
-@EnableResourceServer
 public class GatewayServerApplication {
 
     public static void main(String[] args) {

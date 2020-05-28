@@ -1,0 +1,23 @@
+//package com.hoy.oauth2server.config;
+//
+//import org.springframework.security.oauth2.common.OAuth2AccessToken;
+//import org.springframework.security.oauth2.provider.OAuth2Authentication;
+//import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+//
+//import java.util.HashMap;
+//import java.util.Map;
+//
+//public class JWTTokenEnhancer implements TokenEnhancer {
+//
+////    @Override
+////    Orgus
+////
+////    @Override
+////    public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
+////        Map<String, Object> additionalInfo = new HashMap<>();
+////        String orgId = getOrgId()
+////    }
+////
+////    private String getOrgId() {
+////    }
+//}
