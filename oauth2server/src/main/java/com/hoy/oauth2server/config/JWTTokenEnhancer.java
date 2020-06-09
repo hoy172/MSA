@@ -15,8 +15,7 @@
 ////    @Override
 ////    public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
 ////        Map<String, Object> additionalInfo = new HashMap<>();
-////        String orgId = getOrgId()
-////    }
+////        String orgId = getOrgId()////    }
 ////
 ////    private String getOrgId() {
 ////    }

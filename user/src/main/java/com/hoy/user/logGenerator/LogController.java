@@ -1,5 +1,6 @@
 package com.hoy.user.logGenerator;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,11 +10,19 @@ import java.util.Random;
 
 @RestController
 @Slf4j
+@RequiredArgsConstructor
 public class LogController {
 
-    @GetMapping("/log")
-    public void logGeneration(){
+    private final LogGeneratorService logGeneratorService;
 
-        log.info("로그 발생 로그발생 !!!! " + new Random().nextInt());
+    @GetMapping("/start")
+    public void logStart(){
+
+        logGeneratorService.startScheduler();
+    }
+
+    @GetMapping("/stop")
+    public void logStop(){
+        logGeneratorService.stopScheduler();
     }
 }
